@@ -1,0 +1,121 @@
+body
+{
+	margin:0;
+	padding:0;
+	font-family: times new roman;
+	background-size: cover;
+}
+.menu
+{
+	display:flex;
+	position: absolute;
+	width: 100%;
+	background: rgba(255,255,255,.5);
+	padding: 0 100px;
+	box-sizing: border-box;
+	border-bottom: 1px solid rgba(0,0,0,.2);
+}
+nav
+{
+	display: block;
+	position: relative;
+	float: right;
+}
+nav ul
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li
+{
+	list-style: none;
+}
+nav ul li a
+{
+	display: block;
+	font-size: 18;
+	font-weight: bold;
+	padding: 15px 15px;
+	text-decoration: none;
+	margin-right: 7px;
+	color: black;
+}
+nav ul li a:hover
+{
+	background: green;
+	color: #fff;
+}
+nav ul li ul
+{
+	display: block;
+	background: cornsilk;
+	min-width: 150px;
+	margin-top: 1px;
+	position: absolute;
+	box-shadow: 0 2px 5px rgba(0,0,0,.5);
+	visibility: hidden;
+	transition: .5s;
+	transform: translateY(40px);
+}
+nav ul li:hover ul
+{
+	visibility: visible;
+	transform: translateY(0px);
+}
+nav ul li ul li a
+{
+	padding: 10px;
+}
+.container
+{
+	max-width: 2000px;
+	margin: 25px auto 0;
+}
+.container a
+{
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 25px;
+	background-color: none;
+	color: #fff;
+	margin: 0 15px;
+	border-radius: 10px;
+	
+	animation: animation 2s infinite linear;
+	-webkit-animation: animation 2s infinite linear;
+	-moz-animation: animation 2s infinite linear;
+}
+@keyframes animation
+{
+	0%,45%
+	{
+		background-color:none;
+	}
+	46%,100%
+	{
+		background-color: blue;
+	}
+}
+@-webkit-keyframes animation
+{
+	0%,45%
+	{
+		background-color:none;
+	}
+	46%,100%
+	{
+		background-color: blue;
+	}
+}
+@-moz-keyframes animation
+{
+	0%,45%
+	{
+		background-color:none;
+	}
+	46%,100%
+	{
+		background-color: blue;
+	}
+}
